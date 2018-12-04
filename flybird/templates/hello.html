@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block mainbody %}
+<p> 继承 base.html</p>
+<h1>{{ hello }}</h1>
+{% if not my_message.name == 'aaa' %}aaa{% else %}bbbb{% endif %}
+{% ifequal my_message.name 'a' %}aaa{% else %}bbb{% endifequal %}
+{% endblock %}
+
+
+
+
